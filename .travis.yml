@@ -1,15 +1,14 @@
 language: bash
 dist: trusty
-sudo: required
 
 before_install:
 
-  - sudo pip install linkchecker
+  - pip install linkchecker
   
 install:
 
   - git clone https://github.com/evilnick/documentation-builder
-  - sudo pip3 install ./documentation-builder
+  - pip3 install ./documentation-builder
  
 
 script:
