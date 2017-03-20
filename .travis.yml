@@ -5,14 +5,15 @@ python:
   
   
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y linkchecker
+  - wget http://ftp.debian.org/debian/pool/main/l/linkchecker/linkchecker_9.3-4_amd64.deb
+  - sudo dpkg -i linkchecker_9.3-4_amd64.deb
   
 install:
 
   - git clone https://github.com/evilnick/documentation-builder
   - pip install ./documentation-builder
-  - python3 ./documentation-builder/bin/documentation-builder
+ 
 
 script:
+  - python3 ./documentation-builder/bin/documentation-builder
   - bash .ci/links.sh
