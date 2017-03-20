@@ -6,7 +6,7 @@ virtualenv:
 
 before_install:
 
-  - pip install -I requests>=2.2.0
+  - pip install requests
   - sudo apt-get -qq update
   - sudo apt-get install -y linkchecker
   
