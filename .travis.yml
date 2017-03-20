@@ -3,6 +3,7 @@ dist: trusty
 
 before_install:
 
+  - pip install requests
   - pip install linkchecker
   
 install:
