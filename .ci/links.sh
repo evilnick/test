@@ -2,5 +2,7 @@
 
 set -e
 
-linkchecker --version
+echo `linkchecker --version`
+echo `pip list | grep 'requests'`
+
 linkchecker build/en/* --check-extern
