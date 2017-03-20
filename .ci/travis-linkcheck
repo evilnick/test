@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -e 
+
+documentation-builder
+linkchecker --check-extern build/en/*.html 
