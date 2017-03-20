@@ -7,15 +7,13 @@ virtualenv:
 before_install:
 
   - pip install -I requests>=2.2.0
-  - bash -c 'echo `pip list | grep 'requests'`'
+  - sudo apt-get -qq update
+  - sudo apt-get install -y linkchecker
   
   
 install:
 
   - git clone https://github.com/evilnick/documentation-builder
-  - git clone https://github.com/wummel/linkchecker
-  - make -C linkchecker/doc/html
-  - pip install ./linkchecker
   - pip3 install ./documentation-builder
  
 
