@@ -8,11 +8,13 @@ before_install:
 
   - pip install -I requests>=2.2.0
   - bash -c 'echo `pip list | grep 'requests'`'
-  - pip install linkchecker==9.2
+  
   
 install:
 
   - git clone https://github.com/evilnick/documentation-builder
+  - git clone https://github.com/wummel/linkchecker
+  - pip install ./linkchecker
   - pip3 install ./documentation-builder
  
 
