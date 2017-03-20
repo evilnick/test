@@ -1,4 +1,13 @@
-language: bash
+language: python
+
+
+before-install:
+  - python3 -m venv env
+
+install:
+  - git clone https://github.com/evilnick/documentation-builder
+  - env/bin/pip install ./documentation-builder
+  - env/bin/python3 ./documentation-builder/bin/documentation-builder
 
 script:
-    - bash /.ci/links.sh
+  - bash /.ci/links.sh
