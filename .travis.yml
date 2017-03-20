@@ -7,7 +7,7 @@ virtualenv:
 before_install:
 
   - pip install -I requests>=2.2.0
-  - pip list | grep 'requests'
+  - bash -c 'echo `pip list | grep 'requests'`'
   - pip install linkchecker
   
 install:
