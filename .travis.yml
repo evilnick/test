@@ -15,4 +15,4 @@ install:
   - python3 ./documentation-builder/bin/documentation-builder
 
 script:
-  - bash /.ci/links.sh
+  - bash .ci/links.sh
