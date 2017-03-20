@@ -14,6 +14,7 @@ install:
 
   - git clone https://github.com/evilnick/documentation-builder
   - git clone https://github.com/wummel/linkchecker
+  - make -C linkchecker/doc/html
   - pip install ./linkchecker
   - pip3 install ./documentation-builder
  
