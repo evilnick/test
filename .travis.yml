@@ -8,7 +8,7 @@ before_install:
 
   - pip install -I requests>=2.2.0
   - bash -c 'echo `pip list | grep 'requests'`'
-  - pip install linkchecker==8.6
+  - pip install linkchecker==9.2
   
 install:
 
