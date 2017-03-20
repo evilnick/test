@@ -1,5 +1,7 @@
 language: bash
-  
+dist: trusty
+sudo: required
+
 before_install:
 
   - pip install linkchecker
