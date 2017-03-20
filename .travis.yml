@@ -5,6 +5,9 @@ python:
   
   
 before_install:
+  - sudo apt-get -qq update
+  - sudo apt install -y python-urllib3
+  - sudo apt install -y python-requests
   - wget http://ftp.debian.org/debian/pool/main/l/linkchecker/linkchecker_9.3-4_amd64.deb
   - sudo dpkg -i linkchecker_9.3-4_amd64.deb
   
