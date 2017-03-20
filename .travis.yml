@@ -9,7 +9,7 @@ before_install:
   - pip install requests
   - sudo apt-get -qq update
   - sudo apt-get install -y linkchecker
-  - sudo apt-get install python-pip3
+  - sudo apt-get install python3-pip
   
   
 install:
