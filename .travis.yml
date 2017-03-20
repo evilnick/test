@@ -4,12 +4,12 @@ sudo: required
 
 before_install:
 
-  - pip install linkchecker
+  - sudo pip install linkchecker
   
 install:
 
   - git clone https://github.com/evilnick/documentation-builder
-  - pip3 install ./documentation-builder
+  - sudo pip3 install ./documentation-builder
  
 
 script:
