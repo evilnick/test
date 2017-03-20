@@ -1,9 +1,12 @@
 language: bash
 dist: trusty
 
+virtualenv:
+    system_site_packages: true
+
 before_install:
 
-  - pip install requests
+  - pip install -I requests>=2.2.0
   - pip install linkchecker
   
 install:
