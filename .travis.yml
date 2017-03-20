@@ -7,10 +7,7 @@ virtualenv:
 before_install:
 
   - pip install requests
-  - sudo apt-get -qq update
-  - sudo apt-get install -y linkchecker
-  - sudo apt-get install python3-pip
-  
+  - pip install linkchecker
   
 install:
 
@@ -21,3 +18,4 @@ install:
 script:
   - python3 ./documentation-builder/bin/documentation-builder
   - bash .ci/links.sh
+
