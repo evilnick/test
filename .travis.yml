@@ -3,11 +3,16 @@ language: python
 python:
   - "3.5"
   
+  
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y linkchecker
+  
 install:
-  - python3 -m venv env
+
   - git clone https://github.com/evilnick/documentation-builder
-  - env/bin/pip install ./documentation-builder
-  - env/bin/python3 ./documentation-builder/bin/documentation-builder
+  - pip install ./documentation-builder
+  - python3 ./documentation-builder/bin/documentation-builder
 
 script:
   - bash /.ci/links.sh
