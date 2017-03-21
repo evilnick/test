@@ -14,7 +14,7 @@ before_install:
 install:
 
   - git clone https://github.com/evilnick/documentation-builder
-  - pip3 install ./documentation-builder
+  - pip install ./documentation-builder
  
 
 script:
