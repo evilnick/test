@@ -4,19 +4,14 @@ dist: trusty
 python:
   - "3.5"
 
-
 before_install:
-
   - pip install requests
-  - pip install linkchecker
-  
-install:
 
+install:
   - git clone https://github.com/evilnick/documentation-builder
   - pip install ./documentation-builder
  
-
 script:
   - python3 ./documentation-builder/bin/documentation-builder
-  - bash .ci/links.sh
+
 
